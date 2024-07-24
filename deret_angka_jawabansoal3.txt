@@ -1,0 +1,13 @@
+function deretsamping($angka1,$angka2,$jumlah_digit){
+$hasil = '';
+
+    for ($i = 0; $i < $jumlah_digit; $i++) {
+        $jumlah = $angka1 + $angka2;
+        $hasil .= $jumlah;
+        // Update angka1 dan angka2 untuk penjumlahan berikutnya
+        $angka1 = $angka2;
+        $angka2 = $jumlah;
+    }
+
+    return $hasil;
+}

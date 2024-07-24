@@ -1,0 +1,7 @@
+SELECT 
+p.product_name, 
+k.category_name, 
+sk.sub_category_name 
+FROM tb_produk AS p 
+JOIN tb_sub_kategori AS sk ON p.sub_category_id = sk.id 
+JOIN tb_kategori AS k ON sk.category_id = k.id;
